@@ -10,6 +10,9 @@
 
 </div>
 
+<img width="1015" height="601" alt="image" src="https://github.com/user-attachments/assets/d6dbb218-ad4f-4b24-a1c9-4b448c490d46" />
+
+
 Windows has a habit of adding things nobody asked for. Ads, suggestions, a Chat button, Bing in
 Search, another full-screen "here's what's new" page after an update.
 
