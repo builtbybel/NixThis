@@ -52,4 +52,4 @@ own api key, and without one it's just off.
 
 ## state
 
-works, i use it, the filter list keeps growing. beta soon.
+works, i use it, the filter list keeps growing
