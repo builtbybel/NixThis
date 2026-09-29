@@ -1,5 +1,3 @@
-<img width="2048" height="768" alt="nixthis-press-banner" src="https://github.com/user-attachments/assets/17e0920a-2672-4f8c-916f-d141ffb47321" />
-
 <div align="center">
 
 # NixThis
