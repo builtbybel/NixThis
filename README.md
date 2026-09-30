@@ -5,7 +5,6 @@
 **What uBlock does for websites, but for Windows itself.**
 
 [![Release](https://img.shields.io/github/v/release/builtbybel/NixThis?style=flat-square)](https://github.com/builtbybel/NixThis/releases)
-[![Downloads](https://img.shields.io/github/downloads/builtbybel/NixThis/total?style=flat-square)](https://github.com/builtbybel/NixThis/releases)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square)
 
 </div>
