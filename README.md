@@ -9,7 +9,7 @@
 
 </div>
 
-<img width="1015" height="601" alt="image" src="https://github.com/user-attachments/assets/d6dbb218-ad4f-4b24-a1c9-4b448c490d46" />
+<img width="1536" height="1024" alt="nixthis-showcase" src="https://github.com/user-attachments/assets/85e5900e-d272-42c1-972b-969d1a0078e2" />
 
 
 Windows has a habit of adding things nobody asked for. Ads, suggestions, a Chat button, Bing in
