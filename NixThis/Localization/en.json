@@ -1,0 +1,346 @@
+{
+  "_Language": "English",
+  "_Translator": "",
+  "_TranslatorUrl": "",
+
+  "Common_Close": "Close",
+  "Common_Cancel": "Cancel",
+  "Common_Save": "Save",
+  "Common_Block": "Block it",
+  "Common_Keep": "Keep it",
+
+  "Pick_Everything": "click to see everything",
+  "Pick_Block": "click to block it",
+  "Pick_Blocked": "already blocked",
+  "Pick_App": "click to see its filters",
+
+  "Main_Pick": "Pick an element",
+  "Main_Shortcut": "From anywhere: Ctrl + Shift + Space",
+  "Main_Categories": "Categories and presets",
+  "Main_Clear": "Clear search",
+  "Main_StatusOn": "Windows is being filtered",
+  "Main_StatusOff": "Windows is unfiltered",
+  "Main_Active": "Active filters\n{0} of {1} ({2} %)",
+  "Main_Removed": "Removed so far\n{0}",
+  "Main_History": "What you blocked",
+  "Main_Refresh": "Look again",
+  "Main_AllCategories": "Everything",
+  "Main_PresetImport": "Load a preset...",
+  "Main_PresetExport": "Save the ticked ones...",
+  "Main_PresetFilter": "Preset (*.json)|*.json",
+  "Main_PresetBad": "This file is not a preset.",
+  "Main_PresetLoaded": "{0}: {1} of {2} filters are on this PC, ticked and waiting for you.",
+  "Main_Applying": "Working ... {0}/{1}",
+  "Main_Apply": "Apply changes",
+  "Main_More": "More",
+  "Main_Less": "Less",
+  "Main_Admin": "administrator",
+  "Main_Version": "Version",
+
+  "Scan_Intro": "{0} entries, filter list v{1}. Tick what should go, then apply.",
+  "Scan_Block": "Block",
+  "Scan_ColumnStatus": "Status",
+  "Scan_StatusBlocked": "Blocked",
+  "Scan_StatusOpen": "Not blocked",
+  "Scan_StatusProtected": "Protected",
+  "Scan_ColumnWhat": "What",
+  "Scan_ColumnWhere": "Where",
+  "Scan_ColumnChanges": "What changes",
+  "Scan_Explain": "Explain",
+  "Scan_AppSafe": "Put there to advertise something. Uninstalls for this user.",
+  "Scan_AppPersonal": "Some people use this one. Uninstalls for this user.",
+  "Scan_AppProtected": "Windows needs this app, so {app} will not remove it.",
+
+  "Where_Windows": "Windows",
+  "Where_Taskbar": "Taskbar",
+  "Where_StartMenu": "Start menu",
+  "Where_Explorer": "File Explorer",
+  "Where_Desktop": "Desktop",
+  "Where_Search": "Search",
+  "Where_LockScreen": "Lock screen",
+  "Where_Edge": "Edge",
+
+  "History_Title": "{app} - what you removed",
+  "History_ColumnWhen": "When",
+  "History_ColumnState": "State",
+  "History_Undo": "Bring it back",
+  "History_Reinstall": "Install again",
+  "History_CameBack": "Restored",
+  "History_Gone": "Blocked",
+
+  "Card_Reveal": "What exactly changes?",
+  "Card_Unknown": "{app} does not know this one yet.",
+  "Card_Noted": "Noted as {0} so it can become a rule.",
+  "Card_Working": "Working on it...",
+  "Card_Done": "{0} is gone. The history has it back.",
+  "Card_Failed": "{0} is still there - Windows refused.",
+
+  "Refused_Text": "Windows did not let {app} change {0}.",
+  "Refused_Elevate": "{0} changes a setting for the whole PC.\r\nStart {app} as administrator and try again?",
+
+  "Settings_Title": "Settings",
+  "Settings_Language": "Language",
+  "Settings_SystemDefault": "System default",
+  "Settings_AiIntro": "With a key, the Explain button asks an AI what an entry really does. {app} never sends what is on your PC, only the name of the setting.",
+  "Settings_Provider": "Provider",
+  "Settings_ApiKey": "API key",
+  "Settings_GetKey": "Where do I get a key?",
+  "Settings_Endpoint": "Address",
+  "Settings_Model": "Model",
+  "Settings_Test": "Test",
+  "Settings_Testing": "Asking...",
+  "Settings_AiTitle": "Explain with AI",
+  "Settings_Filters": "Filter list",
+  "Settings_FilterInfo": "{0} filters, version {1}.\r\n\r\nEverything {app} knows is in this one file. Swap it and {app} knows different things - no new build, no installer. Changes take effect on the next start.\r\n\r\n{2}",
+  "Settings_OpenFile": "Open file",
+  "Settings_Sightings": "Sightings",
+  "Settings_SightingsIntro": "Everything you pointed at that {app} did not recognise. This is where new filters come from.",
+  "Settings_OpenFolder": "Open folder",
+  "Settings_Clear": "Clear",
+  "Settings_Empty": "Nothing yet.",
+  "Settings_About": "About",
+  "About_Github": "Follow on GitHub",
+  "About_Issue": "Report an issue",
+  "About_Donate": "Support this project",
+  "About_Translation": "Translation: {0}",
+  "Settings_AboutText": "The ad blocker for Windows itself: point at something Windows added without asking, and it goes away. Everything it took can be brought back.\r\n\r\nNothing leaves this PC unless you ask an AI to explain an entry - and then only the name of the setting.",
+
+  "Explain_Title": "{app} - {0}",
+
+  "Ai_NoKey": "No API key for {0}. Enter one under Settings.",
+  "Ai_Error": "{0} said: {1}",
+  "Ai_Empty": "no answer",
+  "Ai_NoModel": "Enter the name of the model you want to use.",
+  "Ai_BadEndpoint": "The address must start with http:// or https://.",
+  "Ai_TestPrompt": "Reply with one short sentence confirming that the connection works.",
+  "Ai_AskApp": "What is the Windows app \"{0}\" for, and what do I lose if I uninstall it?",
+  "Ai_AskRule": "What does the Windows setting \"{0}\" do? It writes {1} = {2}. What changes, and what do I lose?",
+
+  "Rule_Name_Advertising ID": "Advertising ID",
+  "Rule_Question_Advertising ID": "Stop apps using your advertising ID?",
+  "Rule_Detail_Advertising ID": "Apps no longer read the per-user id that ties ads across them.",
+
+  "Rule_Name_Finish setup prompts": "Finish setup prompts",
+  "Rule_Question_Finish setup prompts": "Stop the \"finish setting up your device\" screen?",
+  "Rule_Detail_Finish setup prompts": "Windows no longer interrupts you with setup suggestions after signing in.",
+
+  "Rule_Name_Tips and suggestions": "Tips and suggestions",
+  "Rule_Question_Tips and suggestions": "Stop tips and suggestions in Settings?",
+  "Rule_Detail_Tips and suggestions": "Windows stops suggesting apps and features you did not ask about.",
+
+  "Rule_Name_Start button": "Start button",
+  "Rule_Detail_Start button": "Everything {app} knows about, in one list.",
+
+  "Rule_Name_Copilot": "Copilot",
+  "Rule_Names_Copilot": "Copilot",
+  "Rule_Question_Copilot": "Remove Copilot?",
+  "Rule_Detail_Copilot": "The app is uninstalled and its taskbar icon goes with it. The Store has it back any time.",
+
+  "Rule_Name_Task view button": "Task view button",
+  "Rule_Question_Task view button": "Remove the Task View button from the taskbar?",
+  "Rule_Detail_Task view button": "The button disappears. Win+Tab keeps working.",
+
+  "Rule_Name_Taskbar search": "Taskbar search",
+  "Rule_Question_Taskbar search": "Remove the search box from the taskbar?",
+  "Rule_Detail_Taskbar search": "The box disappears. Search still opens with the Start menu or Win+S.",
+
+  "Rule_Name_Widgets button": "Widgets button",
+  "Rule_Question_Widgets button": "Remove the Widgets button from the taskbar?",
+  "Rule_Detail_Widgets button": "The button and its hover panel disappear.",
+
+  "Rule_Name_Chat button": "Chat button",
+  "Rule_Question_Chat button": "Remove the Chat button from the taskbar?",
+  "Rule_Detail_Chat button": "The button disappears. Teams stays installed.",
+
+  "Rule_Name_Start menu suggestions": "Start menu suggestions",
+  "Rule_Question_Start menu suggestions": "Remove the recommended section from the Start menu?",
+  "Rule_Detail_Start menu suggestions": "Start stops suggesting files and apps you did not pin yourself.",
+
+  "Rule_Name_Web results in search": "Web results in search",
+  "Rule_Question_Web results in search": "Remove web results from Windows search?",
+  "Rule_Detail_Web results in search": "Search only looks on this PC. Your browser is untouched.",
+
+  "Rule_Name_Explorer OneDrive banner": "Explorer OneDrive banner",
+  "Rule_Names_Explorer OneDrive banner": "OneDrive",
+  "Rule_Question_Explorer OneDrive banner": "Stop the OneDrive ads in File Explorer?",
+  "Rule_Detail_Explorer OneDrive banner": "The blue \"get more storage\" strip above your files disappears.",
+
+  "Rule_Name_Settings app suggestions": "Settings app suggestions",
+  "Rule_Question_Settings app suggestions": "Stop the account and Office banners in Settings?",
+  "Rule_Detail_Settings app suggestions": "The Settings app stops advertising Microsoft 365 and account upgrades.",
+
+  "Rule_Name_What's new after updates": "What's new after updates",
+  "Rule_Question_What's new after updates": "Stop the welcome screen after every update?",
+  "Rule_Detail_What's new after updates": "Windows stops opening a full-screen tour once an update is installed.",
+
+  "Rule_Name_Apps installing themselves": "Apps installing themselves",
+  "Rule_Question_Apps installing themselves": "Stop Windows installing suggested apps on its own?",
+  "Rule_Detail_Apps installing themselves": "No more games and trials appearing in Start that you never asked for.",
+
+  "Rule_Name_Lock screen ads": "Lock screen ads",
+  "Rule_Question_Lock screen ads": "Stop the ads on the lock screen?",
+  "Rule_Detail_Lock screen ads": "The picture stays, the \"like what you see\" text and its offers go.",
+
+  "Rule_Name_Lock screen slideshow": "Lock screen slideshow",
+  "Rule_Question_Lock screen slideshow": "Stop the lock screen cycling through pictures?",
+  "Rule_Detail_Lock screen slideshow": "One picture stays instead of a slideshow of your own photos.",
+
+  "Rule_Name_Tailored experiences": "Tailored experiences",
+  "Rule_Question_Tailored experiences": "Stop Microsoft tailoring tips to your diagnostic data?",
+  "Rule_Detail_Tailored experiences": "Windows stops turning what it measures about you into suggestions.",
+
+  "Rule_Name_App launch tracking": "App launch tracking",
+  "Rule_Question_App launch tracking": "Stop Windows recording which apps you open?",
+  "Rule_Detail_App launch tracking": "Start stops ranking your apps by how often you used them.",
+
+  "Rule_Name_Location for apps": "Location for apps",
+  "Rule_Question_Location for apps": "Turn off the location service for apps?",
+  "Rule_Detail_Location for apps": "Apps can no longer ask Windows where this PC is.",
+
+  "Rule_Name_Online speech recognition": "Online speech recognition",
+  "Rule_Question_Online speech recognition": "Stop sending your voice to Microsoft?",
+  "Rule_Detail_Online speech recognition": "Dictation falls back to the recognition that runs on this PC.",
+
+  "Rule_Name_Click To Do": "Click To Do",
+  "Rule_Question_Click To Do": "Turn off the Click To Do overlay?",
+  "Rule_Detail_Click To Do": "Win+Click stops opening the AI panel over whatever is on screen.",
+
+  "Rule_Name_Phone panel in Start": "Phone panel in Start",
+  "Rule_Names_Phone panel in Start": "Phone Link;Phone",
+  "Rule_Question_Phone panel in Start": "Remove the phone panel from the Start menu?",
+  "Rule_Detail_Phone panel in Start": "The column on the right side of Start disappears.",
+
+  "Rule_Name_Snap layouts on hover": "Snap layouts on hover",
+  "Rule_Question_Snap layouts on hover": "Stop the layout box popping up over the maximize button?",
+  "Rule_Detail_Snap layouts on hover": "The flyout goes. Win+Arrow and dragging to the edge keep working.",
+
+  "Rule_Name_Game recording in the background": "Game recording in the background",
+  "Rule_Question_Game recording in the background": "Stop Xbox recording your games in the background?",
+  "Rule_Detail_Game recording in the background": "Nothing is captured until you press record yourself.",
+
+  "Rule_Name_Gallery in Explorer": "Gallery in Explorer",
+  "Rule_Names_Gallery in Explorer": "Gallery",
+  "Rule_Question_Gallery in Explorer": "Remove Gallery from the File Explorer sidebar?",
+  "Rule_Detail_Gallery in Explorer": "The entry goes. Your pictures stay exactly where they are.",
+
+  "Rule_Name_Explorer opens Home": "Explorer opens Home",
+  "Rule_Names_Explorer opens Home": "Home",
+  "Rule_Question_Explorer opens Home": "Open File Explorer on This PC instead of Home?",
+  "Rule_Detail_Explorer opens Home": "Explorer starts on your drives rather than on recommended files.",
+
+  "Rule_Name_Spotlight icon on the desktop": "Spotlight icon on the desktop",
+  "Rule_Names_Spotlight icon on the desktop": "Learn about this picture",
+  "Rule_Question_Spotlight icon on the desktop": "Remove the Spotlight icon from the desktop?",
+  "Rule_Detail_Spotlight icon on the desktop": "The \"learn about this picture\" icon goes. The wallpaper keeps changing.",
+
+  "Rule_Name_Recycle Bin on the desktop": "Recycle Bin on the desktop",
+  "Rule_Names_Recycle Bin on the desktop": "Recycle Bin",
+  "Rule_Question_Recycle Bin on the desktop": "Remove the Recycle Bin from the desktop?",
+  "Rule_Detail_Recycle Bin on the desktop": "The icon goes. Deleted files still land there and Explorer still opens it.",
+
+  "Rule_Name_Suggested notifications": "Suggested notifications",
+  "Rule_Question_Suggested notifications": "Stop Windows suggesting things through notifications?",
+  "Rule_Detail_Suggested notifications": "The toasts that advertise features stop. Your apps keep notifying you.",
+
+  "Rule_Name_Show more options": "Show more options",
+  "Rule_Names_Show more options": "Show more options",
+  "Rule_Question_Show more options": "Bring back the full right-click menu?",
+  "Rule_Detail_Show more options": "Every entry is on the first menu again, so nothing hides behind a second click.",
+
+  "Rule_Name_Recall": "Recall",
+  "Rule_Question_Recall": "Stop Windows Recall from being switched on?",
+  "Rule_Detail_Recall": "The AI that screenshots everything you do can no longer be enabled on this PC.",
+
+  "Rule_Name_Copilot everywhere": "Copilot everywhere",
+  "Rule_Question_Copilot everywhere": "Turn Copilot off for this account?",
+  "Rule_Detail_Copilot everywhere": "A policy instead of an uninstall: Copilot stays installed and stops opening at all.",
+
+  "Rule_Name_Activity history": "Activity history",
+  "Rule_Question_Activity history": "Stop Windows collecting what you did?",
+  "Rule_Detail_Activity history": "No more list of apps opened and files used behind the Timeline.",
+
+  "Rule_Name_Diagnostic data": "Diagnostic data",
+  "Rule_Question_Diagnostic data": "Send Microsoft as little diagnostic data as Windows allows?",
+  "Rule_Detail_Diagnostic data": "Telemetry drops to the required minimum. It cannot be switched off entirely.",
+
+  "Rule_Name_Lock screen": "Lock screen",
+  "Rule_Question_Lock screen": "Skip the lock screen?",
+  "Rule_Detail_Lock screen": "Waking the PC goes straight to the sign-in box.",
+
+  "Rule_Name_Edge sign-in prompt": "Edge sign-in prompt",
+  "Rule_Question_Edge sign-in prompt": "Stop Edge asking you to sign in?",
+  "Rule_Detail_Edge sign-in prompt": "Edge stops pushing a Microsoft account on every start.",
+
+  "Rule_Name_Edge default browser nagging": "Edge default browser nagging",
+  "Rule_Question_Edge default browser nagging": "Stop Edge asking to be your default browser?",
+  "Rule_Detail_Edge default browser nagging": "The banner and the full-screen prompt both stop appearing.",
+
+  "Rule_Name_Edge new tab clutter": "Edge new tab clutter",
+  "Rule_Question_Edge new tab clutter": "Clear the shortcuts off the Edge new tab page?",
+  "Rule_Detail_Edge new tab clutter": "MSN, Office and the other preset tiles disappear.",
+
+  "Rule_Name_Edge shopping sidebar": "Edge shopping sidebar",
+  "Rule_Question_Edge shopping sidebar": "Turn off the Edge shopping assistant?",
+  "Rule_Detail_Edge shopping sidebar": "No more coupon and price-comparison popups while you shop.",
+
+  "Rule_Name_Edge welcome page": "Edge welcome page",
+  "Rule_Question_Edge welcome page": "Skip the Edge welcome page?",
+  "Rule_Detail_Edge welcome page": "Edge stops opening a tour after every install and update.",
+
+  "Rule_Name_Edge running in the background": "Edge running in the background",
+  "Rule_Question_Edge running in the background": "Stop Edge staying in memory after you close it?",
+  "Rule_Detail_Edge running in the background": "Startup Boost goes. Edge opens a moment slower but is really gone when closed.",
+
+  "Rule_Name_Edge sidebar": "Edge sidebar",
+  "Rule_Names_Edge sidebar": "Copilot;Discover;Sidebar",
+  "Rule_Question_Edge sidebar": "Remove the Edge sidebar?",
+  "Rule_Detail_Edge sidebar": "The Discover and tools column on the right disappears.",
+
+  "Rule_Name_Restart while you are signed in": "Restart while you are signed in",
+  "Rule_Question_Restart while you are signed in": "Stop Windows rebooting on its own to finish an update?",
+  "Rule_Detail_Restart while you are signed in": "Updates wait for you to restart instead of choosing a moment themselves.",
+
+  "Rule_Name_Drivers from Windows Update": "Drivers from Windows Update",
+  "Rule_Question_Drivers from Windows Update": "Leave drivers out of Windows Update?",
+  "Rule_Detail_Drivers from Windows Update": "A working driver is no longer replaced behind your back.",
+
+  "Rule_Name_Search suggestions": "Search suggestions",
+  "Rule_Question_Search suggestions": "Stop the search box suggesting things you never typed?",
+  "Rule_Detail_Search suggestions": "The box only answers what you type instead of filling itself with offers.",
+
+  "Rule_Name_News and interests": "News and interests",
+  "Rule_Question_News and interests": "Remove News and interests from the taskbar?",
+  "Rule_Detail_News and interests": "The weather strip and the headline panel behind it disappear.",
+
+  "Rule_Name_Meet Now button": "Meet Now button",
+  "Rule_Question_Meet Now button": "Remove the Meet Now button from the tray?",
+  "Rule_Detail_Meet Now button": "The Skype call icon next to the clock goes. Skype stays installed.",
+
+  "Rule_Name_Spotlight on the lock screen": "Spotlight on the lock screen",
+  "Rule_Question_Spotlight on the lock screen": "Keep your own lock screen picture instead of Microsoft's?",
+  "Rule_Detail_Spotlight on the lock screen": "Windows stops fetching a new picture every day, and the offers on it go with it.",
+
+  "Rule_Name_Narrator online services": "Narrator online services",
+  "Rule_Question_Narrator online services": "Stop Narrator using online voices?",
+  "Rule_Detail_Narrator online services": "The screen reader speaks with the voices on this PC and sends nothing away.",
+
+  "Rule_Name_Edge collections": "Edge collections",
+  "Rule_Question_Edge collections": "Remove the Collections button from Edge?",
+  "Rule_Detail_Edge collections": "The clipboard icon in the toolbar and its panel disappear.",
+
+  "Rule_Name_Edge gamer mode": "Edge games panel",
+  "Rule_Question_Edge gamer mode": "Turn off the Edge games panel?",
+  "Rule_Detail_Edge gamer mode": "The controller icon and the games Edge suggests in it go.",
+
+  "Rule_Name_Edge importing on every start": "Edge importing on every start",
+  "Rule_Question_Edge importing on every start": "Stop Edge importing from your other browser on every start?",
+  "Rule_Detail_Edge importing on every start": "Edge stops copying tabs and favourites from Chrome behind your back.",
+
+  "Rule_Name_Edge quick links": "Edge quick links",
+  "Rule_Question_Edge quick links": "Remove the quick links from the Edge new tab page?",
+  "Rule_Detail_Edge quick links": "The row of sites Edge thinks you want disappears.",
+
+  "Rule_Name_Edge feedback": "Edge feedback",
+  "Rule_Question_Edge feedback": "Remove the feedback button from Edge?",
+  "Rule_Detail_Edge feedback": "The smiley in the menu and the survey popups both go."
+}
