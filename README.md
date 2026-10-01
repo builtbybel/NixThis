@@ -45,7 +45,9 @@ There are two ways, and you can mix them freely.
 | **3** | A **green frame** means NixThis recognises it. Click it |
 | **4** | Read what will change, then block it or leave it alone |
 
-The click is caught by NixThis, so it does not accidentally activate the button underneath.
+The click is caught by NixThis, so it does not accidentally activate the button underneath. Windows
+gives a shortcut to whoever asked for it first, so if another app already owns
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd>, the button is the way in.
 
 > [!NOTE]
 > A **grey frame** means NixThis does not know that element yet. The sighting is recorded locally
@@ -53,7 +55,7 @@ The click is caught by NixThis, so it does not accidentally activate the button 
 
 ### Use the filter list
 
-Open it with **More**, or press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>.
+Open it with **More**, and fold it away again with **Less**.
 
 The list shows everything NixThis currently knows about, including things that are not visible on
 screen right now. Search it, tick what should go, choose **Apply changes**. Each row tells you where
@@ -70,13 +72,6 @@ restores exactly what was there before.
 > [!IMPORTANT]
 > Removed Store apps are the exception. Windows offers no real undo for an uninstall, so NixThis
 > opens the matching Microsoft Store page instead.
-
-### Shortcuts
-
-| Keys | What it does |
-|---|---|
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Space</kbd> | Pick an element |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Open the filter list |
 
 ---
 
@@ -123,6 +118,9 @@ to restore it.
 The list has its own version number and can grow independently from the app. Pointing at an unknown
 element writes its signature to `Data/Sightings.log`. That log stays on the PC and gives me the raw
 material for adding new filters.
+
+How a filter is written, from a log line to a working section, is explained in
+[`Filters.md`](Filters.md) ([deutsch](Filters.de.md)).
 
 </details>
 
