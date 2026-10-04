@@ -59,6 +59,9 @@
   "Where_Search": "Search",
   "Where_LockScreen": "Lock screen",
   "Where_Edge": "Edge",
+  "Where_Ads": "Ads",
+  "Where_Privacy": "Privacy",
+  "Where_Apps": "Apps",
 
   "History_Title": "{app} - what you removed",
   "History_ColumnWhen": "When",
@@ -144,9 +147,9 @@
   "Rule_Question_Taskbar search": "Remove the search box from the taskbar?",
   "Rule_Detail_Taskbar search": "The box disappears. Search still opens with the Start menu or Win+S.",
 
-  "Rule_Name_Widgets button": "Widgets button",
-  "Rule_Question_Widgets button": "Remove the Widgets button from the taskbar?",
-  "Rule_Detail_Widgets button": "The button and its hover panel disappear.",
+  "Rule_Name_Widgets": "Widgets",
+  "Rule_Question_Widgets": "Remove Widgets from the taskbar?",
+  "Rule_Detail_Widgets": "The button, its panel and the weather strip go, and the feature itself is off, not hidden.",
 
   "Rule_Name_Chat button": "Chat button",
   "Rule_Question_Chat button": "Remove the Chat button from the taskbar?",
@@ -308,9 +311,6 @@
   "Rule_Question_Search suggestions": "Stop the search box suggesting things you never typed?",
   "Rule_Detail_Search suggestions": "The box only answers what you type instead of filling itself with offers.",
 
-  "Rule_Name_News and interests": "News and interests",
-  "Rule_Question_News and interests": "Remove News and interests from the taskbar?",
-  "Rule_Detail_News and interests": "The weather strip and the headline panel behind it disappear.",
 
   "Rule_Name_Meet Now button": "Meet Now button",
   "Rule_Question_Meet Now button": "Remove the Meet Now button from the tray?",

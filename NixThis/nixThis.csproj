@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>NixThis</AssemblyName>
+    <!-- the name is a name, not a word: Application.ProductName reads it, nothing translates it -->
+    <Product>NixThis</Product>
+    <RootNamespace>NixThis</RootNamespace>
+    <!-- 0.x says out loud that the filter list is still being corrected, and the minor counts
+         in tens the way uBlock does. Version is what the about page shows, the other two are
+         what Windows reads off the file. -->
+    <Version>0.42.0</Version>
+    <AssemblyVersion>0.42.0</AssemblyVersion>
+    <FileVersion>0.42.0</FileVersion>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <!-- SubType is what makes Visual Studio offer the designer at all, DependentUpon is what nests
+       the generated files under the one you open. Without the first, a form opens as code. -->
+  <ItemGroup>
+    <Compile Update="MainForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="MainForm.Designer.cs"><DependentUpon>MainForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="MainForm.resx"><DependentUpon>MainForm.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\ConfirmCard.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\ConfirmCard.Designer.cs"><DependentUpon>ConfirmCard.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ConfirmCard.resx"><DependentUpon>ConfirmCard.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\HistoryForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\HistoryForm.Designer.cs"><DependentUpon>HistoryForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\HistoryForm.resx"><DependentUpon>HistoryForm.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\SettingsForm.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\SettingsForm.Designer.cs"><DependentUpon>SettingsForm.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\SettingsForm.resx"><DependentUpon>SettingsForm.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="Views\ExplainDialog.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Views\ExplainDialog.Designer.cs"><DependentUpon>ExplainDialog.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="Views\ExplainDialog.resx"><DependentUpon>ExplainDialog.cs</DependentUpon></EmbeddedResource>
+  </ItemGroup>
+
+  <!-- the settings subpages are controls, not windows, but they open the same way -->
+  <ItemGroup>
+    <Compile Update="Views\Settings\AboutPage.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\Settings\AboutPage.Designer.cs"><DependentUpon>AboutPage.cs</DependentUpon></Compile>
+    <Compile Update="Views\Settings\AiPage.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\Settings\AiPage.Designer.cs"><DependentUpon>AiPage.cs</DependentUpon></Compile>
+    <Compile Update="Views\Settings\FilterPage.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\Settings\FilterPage.Designer.cs"><DependentUpon>FilterPage.cs</DependentUpon></Compile>
+    <Compile Update="Views\Settings\GeneralPage.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\Settings\GeneralPage.Designer.cs"><DependentUpon>GeneralPage.cs</DependentUpon></Compile>
+    <Compile Update="Views\Settings\SightingPage.cs"><SubType>UserControl</SubType></Compile>
+    <Compile Update="Views\Settings\SightingPage.Designer.cs"><DependentUpon>SightingPage.cs</DependentUpon></Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\Filters.ini" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Localization\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+  </ItemGroup>
+
+</Project>

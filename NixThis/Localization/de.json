@@ -59,6 +59,9 @@
   "Where_Search": "Suche",
   "Where_LockScreen": "Sperrbildschirm",
   "Where_Edge": "Edge",
+  "Where_Ads": "Werbung",
+  "Where_Privacy": "Datenschutz",
+  "Where_Apps": "Apps",
 
   "History_Title": "{app} - was du entfernt hast",
   "History_ColumnWhen": "Wann",
@@ -144,9 +147,9 @@
   "Rule_Question_Taskbar search": "Das Suchfeld aus der Taskleiste entfernen?",
   "Rule_Detail_Taskbar search": "Das Feld verschwindet. Die Suche öffnet weiter über das Startmenü oder Win+S.",
 
-  "Rule_Name_Widgets button": "Widgets-Knopf",
-  "Rule_Question_Widgets button": "Den Widgets-Knopf aus der Taskleiste entfernen?",
-  "Rule_Detail_Widgets button": "Der Knopf und sein Hover-Fenster verschwinden.",
+  "Rule_Name_Widgets": "Widgets",
+  "Rule_Question_Widgets": "Widgets aus der Taskleiste entfernen?",
+  "Rule_Detail_Widgets": "Knopf, Fenster und Wetterstreifen verschwinden, und das Feature selbst ist aus, nicht versteckt.",
 
   "Rule_Name_Chat button": "Chat-Knopf",
   "Rule_Question_Chat button": "Den Chat-Knopf aus der Taskleiste entfernen?",
@@ -309,9 +312,6 @@
   "Rule_Question_Search suggestions": "Dem Suchfeld die Vorschläge abgewöhnen, nach denen du nie gefragt hast?",
   "Rule_Detail_Search suggestions": "Das Feld antwortet nur noch auf das, was du tippst, statt sich mit Angeboten zu füllen.",
 
-  "Rule_Name_News and interests": "Nachrichten und Interessen",
-  "Rule_Question_News and interests": "Nachrichten und Interessen aus der Taskleiste entfernen?",
-  "Rule_Detail_News and interests": "Der Wetterstreifen und das Schlagzeilen-Fenster dahinter verschwinden.",
 
   "Rule_Name_Meet Now button": "Jetzt besprechen",
   "Rule_Question_Meet Now button": "Den Knopf \"Jetzt besprechen\" aus dem Infobereich entfernen?",

@@ -15,14 +15,13 @@ Where=Taskbar
 Match=taskviewbutton
 Process=explorer
 App=Taskbar
-Question=Remove the Task view button from the taskbar?
-Detail=The button next to Search disappears. Win+Tab still works.
+Question=Remove the Task View button from the taskbar?
+Detail=The button disappears. Win+Tab keeps working.
 Path=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 ValueName=ShowTaskViewButton
 ValueType=DWORD
 RecommendedValue=0
 DefaultValue=1
-Restart=explorer
 ```
 
 The section name is the identity of the filter. The history file stores it, undo finds its rule
@@ -137,13 +136,23 @@ tells the shell to draw the desktop icons again, which is enough for a desktop i
 ## Texts and translation
 
 `Question` and `Detail` are written in English in the ini. A locale file overrides them per section
-through `Rule_Question_<section>` and `Rule_Detail_<section>`, the section name itself through
-`Rule_Name_<section>`, and `Names` through `Rule_Names_<section>`, which is what makes label
-matching work on a German Windows. A missing key falls back to the ini, so a new section works
-untranslated.
+through `Rule_Question_<section>` and `Rule_Detail_<section>`, and the section name itself through
+`Rule_Name_<section>`. A missing key falls back to the ini, so a new section works untranslated.
 
-`Where` needs a `Where_<value>` line in the locale files. The existing values are Taskbar,
-StartMenu, Explorer, Desktop, Search, LockScreen and Edge. Omitting `Where` means Windows itself.
+`Names` is translated the same way, through `Rule_Names_<section>`, but it is read from the
+language Windows itself is showing and not from the language chosen in the settings. It is the one
+text nobody reads: it has to be the wording on the screen, and that wording does not change when
+somebody switches the app to English. What a translator needs to know about it is in
+[`Translations.md`](Translations.md).
+
+`Where` needs a `Where_<value>` line in the locale files. It names the place a filter sits in:
+Taskbar, StartMenu, Explorer, Desktop, Search, LockScreen and Edge. Three further values name a
+subject rather than a place, for the switches that sit nowhere you can point at: Ads, Privacy and
+Apps. Omitting `Where` means Windows itself.
+
+A place always wins over a subject. The advert on the lock screen is an advert, but you can point
+at it, so it stays under LockScreen. Without that order the Where column would answer two
+questions at once, and the funnel built from it would offer the same filter twice.
 
 ## Three real cases
 

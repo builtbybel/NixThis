@@ -16,14 +16,13 @@ Where=Taskbar
 Match=taskviewbutton
 Process=explorer
 App=Taskbar
-Question=Remove the Task view button from the taskbar?
-Detail=The button next to Search disappears. Win+Tab still works.
+Question=Remove the Task View button from the taskbar?
+Detail=The button disappears. Win+Tab keeps working.
 Path=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 ValueName=ShowTaskViewButton
 ValueType=DWORD
 RecommendedValue=0
 DefaultValue=1
-Restart=explorer
 ```
 
 Der Abschnittsname ist die Identität des Filters. Die Verlaufsdatei speichert ihn, das Zurücknehmen
@@ -148,12 +147,23 @@ genügt.
 
 `Question` und `Detail` stehen auf Englisch in der ini. Eine Sprachdatei überschreibt sie pro
 Abschnitt über `Rule_Question_<Abschnitt>` und `Rule_Detail_<Abschnitt>`, den Abschnittsnamen über
-`Rule_Name_<Abschnitt>` und `Names` über `Rule_Names_<Abschnitt>`. Letzteres ist der Grund, warum
-das Treffen über Beschriftungen auf einem deutschen Windows funktioniert. Ein fehlender Schlüssel
-fällt auf die ini zurück, ein neuer Abschnitt funktioniert also auch unübersetzt.
+`Rule_Name_<Abschnitt>`. Ein fehlender Schlüssel fällt auf die ini zurück, ein neuer Abschnitt
+funktioniert also auch unübersetzt.
 
-`Where` braucht eine Zeile `Where_<Wert>` in den Sprachdateien. Die vorhandenen Werte sind Taskbar,
-StartMenu, Explorer, Desktop, Search, LockScreen und Edge. Kein `Where` bedeutet Windows selbst.
+`Names` wird genauso übersetzt, über `Rule_Names_<Abschnitt>`, aber es wird aus der Sprache
+gelesen, die **Windows** anzeigt, und nicht aus der, die in den Einstellungen gewählt ist. Es ist
+der eine Text, den niemand liest: er muss der Beschriftung auf dem Bildschirm entsprechen, und die
+ändert sich nicht, wenn jemand die App auf Englisch stellt. Was ein Übersetzer darüber wissen muss,
+steht in [`Translations.md`](Translations.md).
+
+`Where` braucht eine Zeile `Where_<Wert>` in den Sprachdateien. Es benennt den Ort, an dem ein
+Filter sitzt: Taskbar, StartMenu, Explorer, Desktop, Search, LockScreen und Edge. Drei weitere
+Werte benennen statt eines Ortes ein Thema, für die Schalter, auf die man nirgends zeigen kann:
+Ads, Privacy und Apps. Kein `Where` bedeutet Windows selbst.
+
+Der Ort gewinnt immer gegen das Thema. Die Werbung auf dem Sperrbildschirm ist Werbung, aber man
+kann auf sie zeigen, also bleibt sie unter LockScreen. Ohne diese Reihenfolge würde die Spalte Wo
+zwei Fragen gleichzeitig beantworten, und der Trichter darüber böte denselben Filter doppelt an.
 
 ## Drei echte Fälle
 
