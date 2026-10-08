@@ -2,7 +2,7 @@
 
 # NixThis
 
-**Point at what annoys you in Windows and it goes away. What uBlock does for websites, but for Windows itself.**
+**NixThis is not another Windows tweaker. It is a filter engine for Windows itself.**
 
 [![Release](https://img.shields.io/github/v/release/builtbybel/NixThis?style=flat-square)](https://github.com/builtbybel/NixThis/releases)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square)
